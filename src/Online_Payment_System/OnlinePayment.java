@@ -1,6 +1,41 @@
 package Online_Payment_System;
 import java.util.Scanner;
 
+
+abstract class Payment {
+
+    abstract void processPayment();
+
+}
+
+class CreditCardPayment extends Payment {
+
+    @Override
+    void processPayment(){
+        System.out.println("Welcome to the Credit Card Payment System");
+
+    }
+}
+
+class DebitCardPayment extends Payment{
+
+    @Override
+    void processPayment(){
+        System.out.println("Welcome to the Debit Card Payment System");
+
+    }
+}
+
+class UPIPayment extends Payment {
+
+    @Override
+    void processPayment(){
+        System.out.println("Welcome to the UPI-Payment System");
+
+    }
+}
+
+
 public class OnlinePayment {
     public static void main(String[] args){
 
