@@ -9,8 +9,10 @@ abstract class Account {
 
 class SavingsAccount extends Account{
 
+
     void calculateInterest(){
-        System.out.println("Savings Account is Successfully Created");
+
+        System.out.println("Savings Account is Successfully Created ");
     }
 }
 
@@ -24,6 +26,12 @@ class CurrentAccount extends Account {
 
 public class Main {
     public static void main(String[] args){
+
+        SavingsAccount savings = new SavingsAccount();
+        CurrentAccount currentAccount = new CurrentAccount();
+
+        savings.calculateInterest();
+        currentAccount.calculateInterest();
 
     }
 }
