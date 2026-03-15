@@ -12,6 +12,6 @@ public class SmallestNumber {
                 sum = number[i];
             }
         }
-        System.out.println(sum);
+        System.out.println("Smallest" + sum);
     }
 }
